@@ -1,0 +1,15 @@
+
+{{ $section := where .Site.RegularPages "Section" "sponsors" }}
+  <div>
+    {{ with .Site.GetPage "section" "sponsors"}}
+      <h1 class="flex-none">{{ .Param  "tagline" }}</h1>
+    {{ end }}
+  </div>
+
+  {{ range ($section) }}
+    <div class="sponsor-list-logo">
+      <a href="{{ .Params.company_url }}" class="dib grow">
+          <img src="{{ .Params.logo }}" alt="Logo from {{ .Params.company_name }}">
+      </a>
+    </div>
+  {{ end }}

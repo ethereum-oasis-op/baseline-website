@@ -1,0 +1,25 @@
+.oasis-banner {
+    background-color: black;
+    height: 55px;
+}
+
+.oasis-banner img {
+    margin: .3em;
+}
+
+.oasis-required-language {
+    color: hsla(0,0%,100%,.7);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.oasis-required-language a {
+    color: hsla(0,0%,100%,.7);
+}
+
+.sponsor-list-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px; 
+    margin: 20px;
+}

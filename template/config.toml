@@ -1,4 +1,4 @@
-baseURL = "localhost:1313"
+baseURL = "https://jolly-morse-8a394d.netlify.com/"
 languageCode = "en-us"
 title = "Baseline"
 theme = "ananke"

@@ -29,7 +29,7 @@ enableRobotsTXT = false
   logo = "/images/baseline_logos/baselineLogoMark-All-White.png"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
-  featured_image = "/images/cyber_background.jpg"
+  featured_image = "/images/baseline_logos/Web/examples/SVGs/horizontal/baselineHorizontal-Logo-Full-Color.svg"
   recent_posts_number = 1
   mailing_list_subscribe = "mailto:baseline-subscribe@lists.oasis-open-projects.org"
   custom_css = ["css/custom.css"]

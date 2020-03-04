@@ -1,6 +1,6 @@
 ---
 title: ""
-featured_image: '/images/baseline_logos/baselineHorizontal-Logo-Full-Color.svg'
+featured_image: '/images/baseline_logos/baselineHorizontal-Logo-Full-Color.png'
 description: ""
 ---
 

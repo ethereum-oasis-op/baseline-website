@@ -31,6 +31,6 @@ enableRobotsTXT = false
   background_color_class = "bg-black"
   featured_image = "/images/hero-bg.png"
   recent_posts_number = 1
-  mailing_list_subscribe = "mailto:baseline-subscribe@lists.oasis-open-projects.org"
+  mailing_list_subscribe = "mailto:baseline+subscribe@lists.oasis-open-projects.org"
   custom_css = ["css/custom.css"]
   mainSections = ["news", "sponsors"]

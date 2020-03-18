@@ -10,6 +10,12 @@ Paginate = 30 # number of sponsors that will show on sponsor page at a time
 googleAnalytics = ""
 enableRobotsTXT = false
 
+[menu]
+  [[menu.main]]
+    name = "Docs"
+    url = "https://docs.baseline-protocol.org"
+    identifier = "docs site"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
@@ -21,7 +27,7 @@ enableRobotsTXT = false
   facebook = ""
   twitter = "https://twitter.com/baselineproto"
   instagram = ""
-  youtube = ""
+  youtube = "https://www.youtube.com/channel/UCPkZ73TH69tMBaC111wxHYw/playlists"
   github = "https://github.com/ethereum-oasis/baseline"
   gitlab = ""
   linkedin = ""

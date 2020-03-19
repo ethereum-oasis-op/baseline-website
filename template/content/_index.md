@@ -1,6 +1,6 @@
 ---
-title: ""
-featured_image: '/images/hero-bg.png'
+title: "Baseline"
+featured_image: '/images/hero-img-baseline.jpg'
 description: ""
 ---
 

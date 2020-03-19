@@ -7,6 +7,10 @@
     margin: .3em;
 }
 
+.nav-contrast {
+    filter: drop-shadow(.75px .75px .75px #000000);
+}
+
 .oasis-required-language {
     color: hsla(0,0%,100%,.7);
     font-size: 14px;

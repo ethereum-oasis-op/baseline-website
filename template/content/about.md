@@ -31,4 +31,13 @@ actively contributing to the project.
 
 **Current TSC members:**
 
-* List Coming Soon
+* Eric Bravick, Code Convergence
+* Brian Chamberlain, ConsenSys
+* Johann Eid, Chainlink
+* Hudson Jameson, Ethereum Foundation
+* Nate McKervey, Splunk
+* Stefan Schmidt, Unibright
+* Kartheek Solipuram, Ernst & Young
+* Kyle Thomas, Provide
+* Zachary Williamson, Aztec
+* John Wolpert, ConsenSys, TSC Chair

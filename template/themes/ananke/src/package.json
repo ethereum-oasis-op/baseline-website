@@ -28,5 +28,8 @@
     "tachyons": "^4.9.1",
     "webpack": "^2.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "acorn": ">=5.7.4",
+    "minimist": ">=0.2.1"
+  }
 }

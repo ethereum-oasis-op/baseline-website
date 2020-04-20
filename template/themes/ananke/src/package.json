@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "acorn": ">=5.7.4",
-    "minimist": ">=0.2.1"
+    "minimist": ">=1.2.3"
   }
 }

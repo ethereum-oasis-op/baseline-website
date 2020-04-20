@@ -38,6 +38,7 @@ actively contributing to the project.
 * Nate McKervey, Splunk
 * Stefan Schmidt, Unibright
 * Kartheek Solipuram, Ernst & Young
+* Conor Svensson, Web3Labs
 * Kyle Thomas, Provide
 * Zachary Williamson, Aztec
 * John Wolpert, ConsenSys, TSC Chair

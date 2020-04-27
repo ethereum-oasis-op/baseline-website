@@ -1,3 +1,48 @@
+/* Global */
+body {
+    font-family: Lato;
+    color: #101010;
+    font-size: 16px;
+}
+p {
+  line-height: 1.6rem;
+}
+
+a {
+  color: #DF4326;
+}
+
+ul {
+  line-height: 1.6rem;
+}
+
+ul:before{
+    content:attr(aria-label);
+    font-weight:500;
+    margin-left:-15px;
+}
+
+.link-icon {
+position: absolute;
+width: 14px;
+color: #DF4326;
+padding-top: 2px;
+padding-left: 4px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* banner top */
 .oasis-banner {
     background-color: black;
     height: 55px;
@@ -20,6 +65,402 @@
 .sponsor-list-logo {
     display: inline-block;
     vertical-align: middle;
-    width: 140px; 
+    width: 140px;
     margin: 20px;
+}
+
+
+/* rows & columns */
+.row {
+    height: 100%;
+    display: flex;
+}
+
+.col-6 {
+  flex: 50%;
+  z-index: 5;
+  float: left;
+}
+
+.col-12 {
+    flex: 100%;
+}
+
+/* homepage hero */
+.hero {
+  background-color: #FFFFFF;
+  border-bottom: 12px solid #DF4326;
+}
+.background-left-triangle {
+  position:absolute;
+  top: 55px;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 55%;
+  background-image: linear-gradient(to top, #DF4326 30%, #F37721);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0%, 0 170%, 70% 0%);
+  clip-path: polygon(0 0%, 0 170%, 70% 0%);
+}
+
+.background-right-triangle {
+  position:absolute;
+  top: 55px;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 55%;
+  background-color: #F6F4EF;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 1000%, 0 205%, 132% -130%);
+  clip-path: polygon(0 1000%, 0 205%, 132% -130%);
+}
+
+.hero-left {
+  flex: 50%;
+  z-index: 5;
+  float: left;
+}
+
+.hero-right {
+  flex: 50%;
+  z-index: 5;
+  float: left;
+  padding-right: 20px;
+}
+
+.baseline img {
+    max-width: 80%;
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+/* cards */
+.card-wrapper {
+  display: flex;
+}
+.primary-cards {
+  width: 100%;
+  min-width: 200px;
+  background: #FFFFFF;
+  border: 1px solid #CEC5BF;
+  box-sizing: border-box;
+  box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+  margin: 40px 0px 40px 20px;
+  padding: 16px;
+  text-align: left:
+
+}
+
+.primary-cards a {
+    text-decoration: none;
+
+}
+
+.primary-cards h2 {
+    padding: 0px;
+    line-height: 0rem;
+    font-weight: 500;
+}
+
+.overview-copy {
+    margin: 0px 20px 60px 20px;
+}
+
+/* Join the Discussion Section */
+
+.discussion {
+    width: 100%;
+    padding: 40px 80px;
+}
+
+.secondary-card-wrapper {
+  display: flex;
+}
+
+.secondary-cards {
+  width: 100%;
+  min-width: 200px;
+  background: #FFFFFF;
+  border: 1px solid #CEC5BF;
+  box-sizing: border-box;
+  box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+  margin: 40px 20px 40px 0px;
+  padding: 16px;
+  text-align: left:
+
+}
+
+img.youtube {
+  margin-top: 10px ;
+}
+
+h3.youtube {
+  margin-top: 26px ;
+}
+
+/* Leadership Section */
+.leadership {
+  background-color: #F6F4EF;
+  padding: 20px 0;
+}
+.row.slim {
+  padding: 20px 20rem;
+}
+.border-bottom {
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.left-side {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.right-side {
+  width: 50%;
+  padding-left: 40px;
+}
+
+ul.membership {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* Article Section */
+
+/* Footer Section */
+.footer {
+  color: #F6F4EF;
+  background-color: #101010;
+  padding: 2rem 4rem;
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+.footer li {
+  list-style-type: none;
+  margin-left: -15px;
+}
+
+.footer li a{
+  text-decoration: none;
+}
+
+.link-icon-front {
+  padding-right: 4px;
+}
+
+.footer-left-col {
+  width: 50%;
+}
+
+.footer-center-col {
+  width: 25%;
+}
+
+.footer-center-col {
+  width: 25%;
+}
+
+
+
+/* breakpoints  */
+@media only screen and (max-width: 1472px) {
+  .secondary-card-wrapper {
+    flex-wrap: wrap;
+  }
+  .secondary-cards {
+    width: 31%;
+    margin: 20px 20px 20px 0px;
+  }
+
+}
+
+/* breakpoints  */
+@media only screen and (max-width: 1410px) {
+  .background-left-triangle {
+    height: 40%;
+  }
+
+  .background-right-triangle {
+    display: none;
+  }
+
+  .overview-copy {
+      margin: 0px 20px 20px 20px;
+  }
+
+}
+
+
+/* breakpoints  */
+@media only screen and (max-width: 1350px) {
+
+
+}
+
+/* breakpoints  leadership */
+@media only screen and (max-width: 1265px) {
+  .row.slim {
+    padding: 20px 10rem;
+  }
+}
+
+/* breakpoints  hero, footer */
+@media only screen and (max-width: 1150px) {
+  .hero {
+      background-color: #F6F4EF;
+  }
+
+  .row {
+      flex-wrap: wrap;
+  }
+
+  .background-left-triangle {
+      display: none;
+  }
+
+  .hero-left {
+      float: none;
+      flex: 100%;
+      z-index: 5;
+      height: 100%;
+      background-image: linear-gradient(to top, #DF4326 30%, #F37721);
+      clear: both;
+  }
+  .baseline img {
+      max-width: 50%;
+      padding: 0px 0px 40px 0px;
+      margin: auto;
+      left: 0px
+  }
+
+  .hero-right {
+      flex: 100%;
+      z-index: 6;
+      float: left;
+      margin-top: -100px;
+   }
+
+   .footer-left-col {
+     width: 60%;
+   }
+
+   .footer-center-col {
+     width: 20%;
+   }
+
+   .footer-right-col {
+     width: 20%;
+   }
+}
+/* breakpoints  footer*/
+@media only screen and (max-width: 1036px) {
+  .footer-left-col {
+    width: 100%;
+  }
+
+  .footer-center-col {
+    width: 50%;
+    margin-left: -24px;
+  }
+
+  .footer-right-col {
+    width: 50%;
+    margin-left: -24px;
+  }
+}
+
+/* breakpoints  */
+@media only screen and (max-width: 1018px) {
+  .secondary-cards {
+    width: 46%;
+  }
+
+  .row.slim {
+    padding: 20px 80px;
+  }
+
+  .left-side {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .right-side {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+
+}
+
+
+/* medium screen  */
+@media only screen and (max-width: 686px) {
+  .row {
+  flex-wrap: none;
+  display: block;
+  position: relative;
+  }
+
+  .baseline img {
+    margin-top: 20px;
+      padding: 0px;
+  }
+
+  .hero-right {
+    flex: none;
+    z-index: 6;
+    margin-top: -20px;
+  }
+  .card-wrapper {
+    display: block;
+  }
+
+  .primary-cards {
+    min-width: 200px;
+    width: 97%;
+    margin: 20px;
+  }
+  .overview-copy {
+    margin: 40px 20px 100px 20px;
+  }
+  .discussion {
+      width: 100%;
+      padding: 16px;
+  }
+
+  .secondary-cards {
+    width: 45%;
+    border: none;
+    box-sizing: none;
+    box-shadow: none;
+  }
+
+  .row.slim {
+    padding: 20px 16px;
+  }
+}
+
+/* medium screen  */
+@media only screen and (max-width: 540px) {
+  .hero-right {
+    margin-top: 0px;
+  }
+
+  .primary-cards {
+    border: none;
+    box-sizing: none;
+    box-shadow: none;
+    width: 93%;
+  }
+
 }

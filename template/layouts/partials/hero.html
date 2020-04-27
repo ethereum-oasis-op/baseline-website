@@ -1,0 +1,40 @@
+{{ $featured_image := .Param "featured_image"}}
+<section class="hero">
+   <div class="row cover bg-top">
+     <div class="background-left-triangle">  </div>
+     <div class="background-right-triangle">  </div>
+
+        <!--Left side of hero with logo. Should stack on mobile -->
+        <div class="baseline hero-left">
+            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+        </div>
+
+        <!--Right side of hero with CTA cards and overview content. Should stack on mobile -->
+        <div class="hero-right">
+            <div class= "card-wrapper">
+                <div class="primary-cards">
+                    <img src="/images/icons/primary/gitbook.jpg">
+                    <h2>Get Informed</h2>
+                    <p>View the Documentation</p>
+                    <p><a href="https://docs.baseline-protocol.org/" target="_blank">View the Docs <img src="/images/icons/link/external-link.svg" class="link-icon"></a></p>
+                </div>
+
+
+                <div class="primary-cards">
+                    <img src="/images/icons/primary/github.svg">
+                    <h2>Get the Code</h2>
+                    <p>Watch, Star, and Fork the Public Repo</p>
+                    <p><a href="https://github.com/ethereum-oasis/baseline" target="_blank">Explore the Repo <img src="/images/icons/link/external-link.svg" class="link-icon"></a></p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="overview-copy">
+                    <p class="lead"><strong>The Baseline Protocol</strong> is an open source initiative that combines advances in cryptography, messaging, and blockchain to deliver secure and private business processes at low cost via the public Ethereum Mainnet. The protocol will enable confidential and complex collaboration between enterprises without leaving any sensitive data on-chain.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

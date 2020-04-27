@@ -1,10 +1,40 @@
-<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
+<footer class="footer">
+  <div class="row">
+      <div class="footer-left-col">
+        <p>The Baseline Protocol is an <a href="https://oasis-open-projects.org/">OASIS Open Project</a>. All Rights Reserved.
+          <br />OASIS <a href="https://www.oasis-open.org/policies-guidelines/trademark">trademark</a>, <a href="https://www.oasis-open.org/policies-guidelines/ipr">IPR</a>, <a href="https://www.oasis-open.org/policies-guidelines/privacy">Privacy</a>, and other <a href="https://www.oasis-open.org/policies-guidelines">policies</a> apply.
+          <br /><a href="communications@oasis-open.org">Contact OASIS</a> for details.</p>
+          {{ if .Param "mailing_list_subscribe"}}
+          <div>
+              <p>Subscribe to our <a href="{{ .Param "mailing_list_subscribe" }}"> mailing list</a>.</p>
+              <p>&copy; {{ now.Format "2006" }} OASIS Open</p>
+          </div>
+          {{ end }}
+      </div>
+      <div class="footer-center-col">
+          <ul aria-label="Resources">
+              <li><a href="https://docs.baseline-protocol.org/" target="_blank"><img src="/images/icons/link/gitbook.png" class="link-icon-front"> Documentation</a></li>
+              <li><a href="https://github.com/ethereum-oasis/baseline" target="_blank"><img src="/images/icons/link/github.png" class="link-icon-front"> Code</a></li>
+          </ul>
+      </div>
+      <div class="footer-right-col">
+          <ul aria-label="Follow the Discussions">
+              <li><a href="https://join.slack.com/t/ethereum-baseline/shared_invite/zt-d6emqeci-bjzBsXBqK4D7tBTZ40AEfQ" target="_blank"> <img src="/images/icons/link/slack.png" class="link-icon-front">Slack</a></li>
+              <li><a href="https://t.me/baselineprotocol" target="_blank"><img src="/images/icons/link/telegram.png" class="link-icon-front"> Telegram</a></li>
+              <li><a href="https://discord.gg/NE8AYD7" target="_blank"><img src="/images/icons/link/Discord.png" class="link-icon-front"> Discord</a></li>
+              <li><a href="https://twitter.com/baselineproto" target="_blank"><img src="/images/icons/link/twitter.png" class="link-icon-front"> Twitter</a></li>
+              <li><a href="https://www.youtube.com/channel/UCPkZ73TH69tMBaC111wxHYw/playlists" target="_blank"><img src="/images/icons/link/youtube.png" class="link-icon-front"> YouTube</a></li>
+          </ul>
+      </div>
+  </div>
+
+
+<!--  <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
     &copy; {{ now.Format "2006" }} OASIS Open
   </a>
-    <div class="oasis-required-language"><p>{{ .Site.Title }} is an <a href="https://oasis-open-projects.org/">OASIS Open Project</a>. All Rights Reserved. 
-      <br />OASIS <a href="https://www.oasis-open.org/policies-guidelines/trademark">trademark</a>, <a href="https://www.oasis-open.org/policies-guidelines/ipr">IPR</a>, <a href="https://www.oasis-open.org/policies-guidelines/privacy">Privacy</a>, and other <a href="https://www.oasis-open.org/policies-guidelines">policies</a> apply. 
+    <div class="oasis-required-language"><p>{{ .Site.Title }} is an <a href="https://oasis-open-projects.org/">OASIS Open Project</a>. All Rights Reserved.
+      <br />OASIS <a href="https://www.oasis-open.org/policies-guidelines/trademark">trademark</a>, <a href="https://www.oasis-open.org/policies-guidelines/ipr">IPR</a>, <a href="https://www.oasis-open.org/policies-guidelines/privacy">Privacy</a>, and other <a href="https://www.oasis-open.org/policies-guidelines">policies</a> apply.
       <br /><a href="communications@oasis-open.org">Contact OASIS</a> for details.</p>
       {{ if .Param "mailing_list_subscribe"}}
       <div>
@@ -13,5 +43,5 @@
       {{ end }}
     </div>
     <div>{{ partial "social-follow.html" . }}</div>
-  </div>
+  </div> -->
 </footer>

@@ -170,7 +170,7 @@ padding-left: 4px;
 }
 
 .overview-copy {
-    margin: 0px 20px 60px 20px;
+    margin: 0px 20px 100px 20px;
 }
 
 /* Join the Discussion Section */
@@ -178,10 +178,12 @@ padding-left: 4px;
 .discussion {
     width: 100%;
     padding: 40px 80px;
+    z-index: 10;
 }
 
 .secondary-card-wrapper {
   display: flex;
+
 }
 
 .secondary-cards {

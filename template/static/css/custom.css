@@ -189,6 +189,7 @@ padding-left: 4px;
 }
 
 .secondary-cards {
+  display: flex;
   width: 100%;
   min-width: 200px;
   background: #FFFFFF;
@@ -476,4 +477,15 @@ ul.membership {
     width: 93%;
   }
 
+}
+/* medium screen  */
+@media only screen and (max-width: 540px) {
+  .primary-cards {
+    padding: 0;
+  }
+
+  .secondary-cards {
+    padding: 0;
+    width: 100%;
+  }
 }

@@ -275,9 +275,14 @@ ul.membership {
 }
 /* breakpoints  */
 @media only screen and (max-width: 1768px) {
-  .overview-copy {
-      margin: 0px 20px 100px 20px;
+  .background-left-triangle {
+    max-height: 510px;
   }
+
+  .background-right-triangle {
+    max-height: 510px;
+  }
+
 }
 
 /* breakpoints  */

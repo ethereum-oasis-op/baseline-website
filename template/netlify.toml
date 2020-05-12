@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/privacy"
+  to = "https://www.oasis-open.org/policies-guidelines/privacy"
+  status = 302

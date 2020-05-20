@@ -1,6 +1,5 @@
 /* Global */
 body {
-    font-family: Lato;
     color: #101010;
     font-size: 16px;
 }
@@ -189,7 +188,7 @@ padding-left: 4px;
 }
 
 .secondary-cards {
-  
+
   width: 100%;
   min-width: 200px;
   background: #FFFFFF;

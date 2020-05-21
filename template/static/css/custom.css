@@ -525,6 +525,14 @@ ul.membership {
      width: 20%;
    }
 }
+
+@media only screen and (max-width: 1110px) {
+  .img-container {
+    max-width: 100%;
+  }
+}
+
+
 /* breakpoints  footer*/
 @media only screen and (max-width: 1036px) {
   .footer-left-col {

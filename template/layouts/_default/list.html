@@ -1,9 +1,109 @@
-<html>
-<head>
+{{ define "main" }}
+{{ partial "baseline_banner.html" . }}
+    <section class="feature-hero">
+          <div class="hero-content">
+              <div class="left-side">
+                  <a href="https://www.baseline-protocol.org/"><img src="/images/icons/arrow-left.svg"></a>
+                  <a href="https://www.baseline-protocol.org/" class="home">HOME</a>
+              </div>
+              <div>
+                <h1><span class="color-primary">Baselining</span> SAP ERP and Microsoft Dynamics 365</h1>
+                <p class="large">The "Baseline-SAP-Dynamics Demo" shows a setup of different Enterprise Resource Planning Systems ("ERPs") using the Baseline Protocol to establish a common frame of reference on the public Ethereum Mainnet.</p>
+              </div>
+              <div class="row">
+                  <div class="left-side">
+                        <a href="https://www.youtube.com/watch?v=LNym1HeuTxw&feature=youtu.be" class="lightbox"><img src="/images/icons/bluePlay.svg"></a>
+                        <a href="https://www.youtube.com/watch?v=LNym1HeuTxw&feature=youtu.be" class="link-after-icon lightbox">View the trailer</a>
+                  </div>
+                  <div class="right-side">
+                        <a href="https://github.com/ethereum-oasis/baseline/tree/master/examples/erp-connector-proxy" target="_blank"><img src="/images/icons/blueGit.svg"></a>
+                        <a href="https://github.com/ethereum-oasis/baseline/tree/master/examples/erp-connector-proxy" target="_blank" class="link-after-icon">View the demo code</a>
+                  </div>
+              </div>
+          </div>
+    </section>
+    <div id="youtubelightbox" class="parent">
+    <div class="centeredchild">
+        <div class="videowrapper">
+            <div id="playerdiv"></div>
+        </div>
+    </div>
+</div>
+<script>
 
-  <title>Document</title>
-</head>
-<body>
-  {{.Content}}
-</body>
-</html>
+// load Youtube API code asynchronously
+var tag = document.createElement('script')
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0]
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+
+var isiOS = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)/i) != null //boolean check for iOS devices
+
+var youtubelightbox = document.getElementById('youtubelightbox')
+var player // variable to hold new YT.Player() instance
+
+// Hide lightbox when clicked on
+youtubelightbox.addEventListener('click', function(){
+    this.style.display = 'none'
+    player.stopVideo()
+}, false)
+
+// Exclude youtube iframe from above action
+youtubelightbox.querySelector('.centeredchild').addEventListener('click', function(e){
+    e.stopPropagation()
+}, false)
+
+
+// define onYouTubeIframeAPIReady() function and initialize lightbox when API is ready
+function onYouTubeIframeAPIReady() {
+    createlightbox()
+}
+
+// Extracts the Youtube video ID from a well formed Youtube URL
+function getyoutubeid(link){
+    // Assumed Youtube URL formats
+    // https://www.youtube.com/watch?v=Pe0jFDPHkzo
+    // https://youtu.be/Pe0jFDPHkzo
+    // https://www.youtube.com/v/Pe0jFDPHkzo
+    // and more
+
+    //See http://stackoverflow.com/a/6904504/4360074
+    var youtubeidreg = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+    return youtubeidreg.exec(link)[1] // return Youtube video ID portion of link
+}
+
+// Creates a new YT.Player() instance
+function createyoutubeplayer(videourl){
+    player = new YT.Player('playerdiv', {
+        videoId: videourl,
+        playerVars: {autoplay:1}
+    })
+}
+
+// Main Youtube lightbox function
+function createlightbox(){
+    var targetlinks = document.querySelectorAll('.lightbox')
+    for (var i=0; i<targetlinks.length; i++){
+        var link = targetlinks[i]
+        link._videoid = getyoutubeid(link) // store youtube video ID portion of link inside _videoid property
+        targetlinks[i].addEventListener('click', function(e){
+            youtubelightbox.style.display = 'block'
+            if (typeof player == 'undefined'){ // if video player hasn't been created yet
+                createyoutubeplayer(this._videoid)
+            }
+            else{
+                if (isiOS){ // iOS devices can only use the "cue" related methods
+                    player.cueVideoById(this._videoid)
+                }
+                else{
+                    player.loadVideoById(this._videoid)
+                }
+            }
+            e.preventDefault()
+        }, false)
+    }
+}
+
+</script>
+{{ end }}

@@ -3,12 +3,20 @@ body {
     color: #101010;
     font-size: 16px;
 }
+h1 {
+  font-size: 60px;
+}
 p {
   line-height: 1.6rem;
 }
 
+p.large {
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+
 a {
-  color: #DF4326;
+  color: #19798c;
 }
 
 ul {
@@ -24,7 +32,7 @@ ul:before{
 .link-icon {
 position: absolute;
 width: 14px;
-color: #DF4326;
+color: #19798c;
 padding-top: 2px;
 padding-left: 4px;
 }
@@ -49,6 +57,18 @@ padding-left: 4px;
 
 .oasis-banner img {
     margin: .3em;
+}
+
+.baseline-banner {
+    background-color: white;
+    height: 55px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.baseline-banner img {
+    margin: .3em;
+    width: 180px;
 }
 
 .oasis-required-language {
@@ -78,6 +98,11 @@ padding-left: 4px;
 .col-6 {
   flex: 50%;
   z-index: 5;
+  float: left;
+}
+
+.col-8 {
+  flex: 75%;
   float: left;
 }
 
@@ -273,6 +298,130 @@ ul.membership {
 .footer-center-col {
   width: 25%;
 }
+
+/* list.html page */
+.feature-hero {
+  color: white;
+  background-image: url(/images/sap-dynamic-demo_heroBg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.pb7{
+  padding-bottom: 0px;
+}
+
+.color-primary {
+  color: #DF4326;
+}
+
+.hero-content {
+  max-width: 1280px;
+  padding: 5% 15%;
+}
+
+.link-after-icon {
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 16px;
+  color: #85C6D3;
+  text-decoration: none;
+}
+
+.home {
+  text-decoration: none;
+  color: #85C6D3;
+}
+.banner-card {
+  width: 100%;
+  min-width: 200px;
+  background: #FFFFFF;
+  border: 1px solid #CEC5BF;
+  box-sizing: border-box;
+  box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+  margin: 40px 20px 40px 0px;
+  padding: 16px;
+  text-align: left:
+}
+.horizontal-banner {
+  display: flex;
+}
+.img-container {
+  max-width: 300px;
+  float: left;
+}
+.banner-content {
+  float: left;
+  padding-left: 40px;
+}
+.banner-content h3{
+  color: black;
+}
+.banner-content p{
+  color: black;
+}
+
+/* lightbox */
+/* Parent element can be any width and height */
+.parent{
+	position: fixed;
+	width: 100%; /* can be any width */
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	text-align: center;
+}
+
+.parent:before{ /* pseudo element to force vertical centering of child element */
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.parent:after{ /* pseudo element to create overlay */
+	background: black;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	z-index: 10;
+}
+
+/* Centered child element can be any width and height */
+.centeredchild{
+	position: relative; /* position element to participate in z-indexing */
+	z-index: 20; /* higher z-index than overlay */
+	display: inline-block;
+	vertical-align: middle;
+	width: 80%; /* can be any width */
+}
+
+/* Video container to maintain Youtube 16:9 aspect ratio */
+.videowrapper{
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+}
+
+/* Make Youtube IFRAME responsive */
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
 /* breakpoints  */
 @media only screen and (max-width: 1768px) {
   .background-left-triangle {
@@ -418,6 +567,9 @@ ul.membership {
 
 /* medium screen  */
 @media only screen and (max-width: 686px) {
+  h1 {
+    font-size: 40px;
+  }
   .row {
   flex-wrap: none;
   display: block;
@@ -487,4 +639,11 @@ ul.membership {
     padding: 0;
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 380px) {
+p.large {
+  font-size: 16px;
+  line-height: 2rem;
+}
 }

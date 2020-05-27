@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Baseline</title>
+    <link>https://www.baseline-protocol.org/news/</link>
+    <description>Recent content in News on Baseline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://www.baseline-protocol.org/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EY, ConsenSys, and Microsoft Announce Formation of Baseline Protocol Initiative to Make Ethereum Mainnet Safe and Effective for Enterprises</title>
+      <link>https://www.baseline-protocol.org/news/launch/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.baseline-protocol.org/news/launch/</guid>
+      <description>Industry leaders donate code to public domain through non-profit standards body, OASIS, and join thirteen founding organizations to further develop Baseline Protocol.
+New York, NY, March 4, 2020 — ​Today, ​EY, ​ConsenSys​, and ​Microsoft announced the formation of the Baseline Protocol, an open source initiative that combines advances in cryptography, messaging, and blockchain to deliver secure and private business processes at low cost via the public Ethereum Mainnet. The protocol will enable confidential and complex collaboration between enterprises without leaving any sensitive data on-chain.</description>
+    </item>
+    
+  </channel>
+</rss>

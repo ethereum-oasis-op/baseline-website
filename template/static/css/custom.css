@@ -227,6 +227,44 @@ padding-left: 4px;
 
 }
 
+.channel-card-wrapper {
+  margin-left: 30px;
+  margin-bottom: 20px;
+
+}
+
+.social-cards {
+
+  width: 100%;
+  min-width: 300px;
+  background: #FFFFFF;
+  border: 1px solid #CEC5BF;
+  box-sizing: border-box;
+  box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+
+}
+
+.releases-wrapper {
+  display: flex;
+}
+
+.release-cards {
+
+  width: 100%;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  margin: 40px 20px 40px 0px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.latest-wrapper {
+  display: flex;
+}
+
+
 img.youtube {
   margin-top: 10px ;
 }
@@ -372,6 +410,13 @@ a.light {
   color: #85C6D3;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
 /* lightbox */
 /* Parent element can be any width and height */
 .parent{
@@ -450,6 +495,19 @@ a.light {
   .secondary-cards {
     width: 31%;
     margin: 20px 20px 20px 0px;
+  }
+
+  .releases-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .release-cards {
+    width: 31%;
+    margin: 20px 20px 20px 0px;
+  }
+
+  .latest-wrapper {
+    flex-wrap: wrap;
   }
 
 }
@@ -626,6 +684,20 @@ a.light {
     box-shadow: none;
   }
 
+  .release-cards {
+    width: 45%;
+    border: none;
+    box-sizing: none;
+    box-shadow: none;
+  }
+
+  .social-cards {
+    width: 45%;
+    border: none;
+    box-sizing: none;
+    box-shadow: none;
+  }
+
   .row.slim {
     padding: 20px 16px;
   }
@@ -652,6 +724,16 @@ a.light {
   }
 
   .secondary-cards {
+    padding: 0;
+    width: 100%;
+  }
+
+  .release-cards {
+    padding: 0;
+    width: 100%;
+  }
+
+  .social-cards {
     padding: 0;
     width: 100%;
   }

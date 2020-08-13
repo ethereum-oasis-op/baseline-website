@@ -1,20 +1,22 @@
 <section class="discussion">
-    <h2>New Release</h2>
-    <a href="https://www.baseline-protocol.org/baseline-sap-dynamics-demo/">
+    <div class="rows">
+      <h2 class="dib">Latest Release</h2>
+      <p class="dib ml7-ns"><a href="{{ .Site.BaseURL }}releases">View All</a></p>
+    </div>
+    {{ range first 1 (where .Site.RegularPages "Section" "releases") }}
       <div class="horizontal-banner">
-
         <div class="banner-card">
             <div class="left-side">
               <div class="img-container">
-                <img src="/images/sap-dynamic-demo_heroBg.jpg">
+                <img src="{{ .Params.image }}">
               </div>
             </div>
             <div class="banner-content">
-              <h3>New! SAP / Dynamics 365 Integration Demo</h3>
-              <p>Baselining Business Process Automation across SAP and Microsoft Dynamics</p>
-              <p><a href="https://www.baseline-protocol.org/baseline-sap-dynamics-demo/">See it in action</a></p>
+              <h3>{{ .Params.headline }}</h3>
+              <p>{{ .Params.description }}</p>
+              <p><a href="{{ .Site.BaseURL }}releases/{{.Params.slug}}/">See it in action</a></p>
             </div>
           </div>
         </div>
-    </a>
+    {{ end }}
 </section>

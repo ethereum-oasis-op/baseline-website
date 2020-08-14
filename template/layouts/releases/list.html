@@ -11,7 +11,7 @@
                 <p class="mt0 mb4">The latest developments in the baseline community</p> 
               </div>
               <div class="latest-wrapper">
-              <div class="mw6">
+              <div class="newest-card">
                 {{ range first 1 (where .Site.RegularPages "Section" "releases") }}
                     <a href="{{ .Site.BaseURL}}releases/{{ .Params.slug }}"><img src="{{ .Params.image }}"></a>
                     <p>{{ .PublishDate.Format "January 2, 2006" }}</p>

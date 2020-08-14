@@ -228,8 +228,9 @@ padding-left: 4px;
 }
 
 .channel-card-wrapper {
-  margin-left: 30px;
+  margin-left: 60px;
   margin-bottom: 20px;
+  max-width: 250px;
 
 }
 
@@ -264,6 +265,9 @@ padding-left: 4px;
   display: flex;
 }
 
+.newest-card {
+  max-width: 500px;
+}
 
 img.youtube {
   margin-top: 10px ;
@@ -696,6 +700,10 @@ hr {
     border: none;
     box-sizing: none;
     box-shadow: none;
+  }
+
+  .channel-card-wrapper {
+    margin-left: 0px;  
   }
 
   .row.slim {

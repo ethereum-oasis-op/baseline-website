@@ -1,0 +1,15 @@
+---
+// Title is what appears on the homepage and list page. Description is the subhead that appears under the title on Homepage and List page. Headline is at the top of the detail page. The longer text for the description page is below the ---
+
+title: "Baseline Protocol Version v0.1 and Now Available!"
+date: "2020-08-26"
+headline: "Official Release of the Baseline Protocol Version v0.1"
+description: "Core interfaces and a new Reference Implementation (BRI-1) make it easy to build baselined solutions and baseline your products"
+image: ""
+slug: "v01"
+code: " [This should be the url for the main docs page for v01 after we push it, rather than the link to the github repo...will be sure repo link is at the top prominently of the docs page] "
+demo_vid: " [on its way ] "
+press_release_title: "Baseline Protocol Achieves Key Milestone with Release of v0.1 Implementation for Enterprise IT and the Ethereum Public Blockchain"
+press_release_url: " [ tbd...need official OASIS press release URL ] "
+---
+The release of Baseline Protocol v0.1 represents a significant milestone, because it provides a set of standard interfaces for developers to implement solutions easily and for vendors to provide their own modules that comply with the specification. Official OASIS standards development based on the v0.1 reference implementation will commence in September. Special thanks to engineers at [Provide](https://provide.services) and [EY](https://ey.com) for an extaordinary level of contribution and to the Baseline Protocol [Maintainers](https://docs.baseline-protocol.org/community-leaders) that supported the work.

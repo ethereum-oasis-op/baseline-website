@@ -1,0 +1,9 @@
+{{ range where .Site.RegularPages "Section" "channels" }}
+<div class="social-cards">
+    <img src="{{ .Params.icon }}" class="ml2">
+    <div class="ml3">
+        <h3 class="mb0">{{ .Params.service }}</h3>
+        <p class="mt0"><a href="{{ .Params.target_url }}" target="_blank">{{ .Params.cta }} <img src="/images/icons/link/external-link.svg" class="link-icon"></a></p>
+    </div>
+</div>
+{{ end }}

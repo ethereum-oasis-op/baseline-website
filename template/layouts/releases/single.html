@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ partial "baseline_banner.html" . }}
+  <article class="hero-content">
+
+    <header class="">
+        <div class="left-side">
+            <a href="{{ .Site.BaseURL }}releases"><img src="/images/icons/arrow-left.svg"></a>
+            <a href="{{ .Site.BaseURL }}releases" class="home">BACK TO RELEASES</a>
+        </div>
+      <h1 class="">
+        {{- .Title -}}
+      </h1>
+      {{ if .Params.image }}
+      <img src="{{ .Params.image }}">
+      {{ end }}
+      <p> {{ .PublishDate.Format "January 2, 2006" }}</p>
+    </header>
+
+    <section class="">
+      {{- .Content -}}
+      <div class="row">
+        <div class="left-side">
+              <a href="{{ .Params.demo_vid }}" class="lightbox"><img src="/images/icons/bluePlay.svg"></a>
+              <a href="{{ .Params.demo_vid }}" class="link-after-icon lightbox">View the trailer</a>
+        </div>
+        <div class="right-side">
+              <a href="{{ .Params.code }}" target="_blank"><img src="/images/icons/blueGit.svg"></a>
+              <a href="{{ .Params.code }}" target="_blank" class="link-after-icon">View the demo code</a>
+        </div>
+      </div>
+      <div class="banner-card">
+        {{ if .Params.press_release_title }}
+        <h3>Official Press Release</h3>
+        <p><a href="{{ .Params.press_release_url }}" class="light" target="_blank">{{ .Params.press_release_title }}</a> - {{ .PublishDate.Format "January 2, 2006" }}</p>
+        {{ end }}
+      </div>
+    </section>
+    <section>
+      <h2>Other Releases</h2>
+      {{ partial "releases.html" . }}
+      
+    </section>
+
+    <aside class="w-30-l mt6-l">
+      {{- partial "menu-contextual.html" . -}}
+    </aside>
+
+  </article>
+{{ end }}

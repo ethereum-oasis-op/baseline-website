@@ -1,0 +1,17 @@
+<section class="discussion">
+    <div class="rows">
+      <h2>Follow the Discussion</h2>
+    </div>
+    <div class= "secondary-card-wrapper">
+        {{ range where .Site.RegularPages "Section" "channels" }}
+        <div class="secondary-cards">
+            <img src="{{ .Params.icon }}">
+            <h3>{{ .Params.service }}</h3>
+            <p><a href="{{ .Params.target_url }}" target="_blank">{{ .Params.cta }} <img src="/images/icons/link/external-link.svg" class="link-icon"></a></p>
+        </div>
+        {{ end }}
+    </div>
+    <div class="rows">
+        <p>You can also <a href="https://lists.oasis-open-projects.org/g/baseline" target="_blank">Join our Mailing List</a> to stay up to date.  Have something else in mind?  Email <a href="mailto:op-admin@oasis-open.org">op-admin@oasis-open.org</a> for more information.</p>
+    </div>
+</section>

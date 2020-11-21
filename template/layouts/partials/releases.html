@@ -1,5 +1,5 @@
 <div class="releases-wrapper">
-{{ range where .Site.RegularPages "Section" "releases" }}
+{{ range after 1 (where .Site.RegularPages "Section" "releases") }}
     <div class="release-cards">
       <a href="{{ .Site.BaseURL }}releases/{{.Params.slug }}">
           <img src="{{ .Params.image }}">

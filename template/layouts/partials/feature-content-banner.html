@@ -1,9 +1,9 @@
 <section class="discussion">
     <div class="rows">
-      <h2 class="dib">Latest Release</h2>
+      <h2 class="dib">View the Latest</h2>
       <p class="dib ml4-ns"><a href="{{ .Site.BaseURL }}releases">View All</a></p>
     </div>
-    {{ range first 1 (where .Site.RegularPages "Section" "releases") }}
+    {{ range first 3 (where .Site.RegularPages "Section" "releases") }}
       <div class="horizontal-banner">
         <div class="banner-card">
             <div class="left-side">

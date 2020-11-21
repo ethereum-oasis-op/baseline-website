@@ -1,7 +1,9 @@
 ---
 date: 2020-03-03
+slug: "news/launch"
 description: "Press Release: Announcing the Baseline Protocol Initiative"
 title: "EY, ConsenSys, and Microsoft Announce Formation of Baseline Protocol Initiative to Make Ethereum Mainnet Safe and Effective for Enterprises"
+blurb: "Today, ​EY, ​ConsenSys​, and ​Microsoft announced the formation of the Baseline Protocol, an open source initiative that combines advances in cryptography, messaging, and blockchain to deliver secure and private business processes at low cost via the public Ethereum Mainnet..."
 ---
 
 *Industry leaders donate code to public domain through non-profit standards body, OASIS, and join thirteen founding organizations to further develop Baseline Protocol.*

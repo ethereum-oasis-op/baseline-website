@@ -7,28 +7,24 @@
                   <a href=" {{ .Site.BaseURL }}" class="home">HOME</a>
               </div>
               <div>
-                <h1 class="mb0">Latest Release</h1>
+                <h1 class="mb0">Latest News & Releases</h1>
                 <p class="mt0 mb4">The latest developments in the baseline community</p> 
               </div>
+              {{ $releases := where .Site.RegularPages "Section" "releases" }}
+              {{ $news := where .Site.RegularPages "Section" "news"}}
+              {{ $filtered := $releases | union $news }}
               <div class="latest-wrapper">
               <div class="newest-card">
-                {{ range first 1 (where .Site.RegularPages "Section" "releases") }}
-                    <a href="{{ .Site.BaseURL}}releases/{{ .Params.slug }}"><img src="{{ .Params.image }}"></a>
+                {{ range $filtered.ByDate.Reverse }}
+                    <a href="{{ .Site.BaseURL}}{{ .Params.slug }}"><img src="{{ .Params.image }}"></a>
                     <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
-                    <h2><a href="{{ .Site.BaseURL}}releases/{{ .Params.slug }}">{{ .Params.title }}</a></h2>
-                    {{ .Content }}
+                    <h2><a href="{{ .Site.BaseURL}}{{ .Params.slug }}">{{ .Params.title }}</a></h2>
+                    {{ .Params.blurb }}
+                    <p><a href="{{ .Site.BaseURL}}{{ .Params.slug }}">Read More</a></p>
+                    <div><hr></div>
                 {{ end }}
               </div>
-              <div class= "channel-card-wrapper">
-                  <h3 class="mt0 mb2">Follow the Discussion</h3>
-                  {{ partial "discussion-channels-secondary.html" . }}
-                  <div class="rows">
-                    <p>You can also <a href="https://lists.oasis-open-projects.org/g/baseline" target="_blank">Join our Mailing List</a> to stay up to date.  Have something else in mind?  Email <a href="mailto:op-admin@oasis-open.org">op-admin@oasis-open.org</a> for more information.</p>
-                </div>
               </div>
-            </div>
-              <div><hr></div>
-              <div>{{ partial "releases.html" . }}</div>
     </section>
 </div>
 {{ end }}

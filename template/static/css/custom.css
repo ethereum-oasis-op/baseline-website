@@ -247,6 +247,12 @@ padding-left: 4px;
 
 }
 
+.social-icons {
+    vertical-align: middle;
+    width: 24%;
+    padding-top: 10px;
+}
+
 .releases-wrapper {
   display: flex;
 }

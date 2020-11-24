@@ -20,20 +20,24 @@
       {{- .Content -}}
       <div class="row">
         <div class="left-side">
+          {{ if .Params.demo_vid }}
               <a href="{{ .Params.demo_vid }}" class="lightbox"><img src="/images/icons/bluePlay.svg"></a>
               <a href="{{ .Params.demo_vid }}" class="link-after-icon lightbox">View the trailer</a>
+          {{ end }}
         </div>
         <div class="right-side">
+          {{ if .Params.code }}
               <a href="{{ .Params.code }}" target="_blank"><img src="/images/icons/blueGit.svg"></a>
               <a href="{{ .Params.code }}" target="_blank" class="link-after-icon">View the demo code</a>
+          {{ end }}
+            </div>
+      </div>
+      {{ if .Params.press_release_title }}
+        <div class="banner-card">
+          <h3>Official Press Release</h3>
+          <p><a href="{{ .Params.press_release_url }}" class="light" target="_blank">{{ .Params.press_release_title }}</a> - {{ .PublishDate.Format "January 2, 2006" }}</p>
         </div>
-      </div>
-      <div class="banner-card">
-        {{ if .Params.press_release_title }}
-        <h3>Official Press Release</h3>
-        <p><a href="{{ .Params.press_release_url }}" class="light" target="_blank">{{ .Params.press_release_title }}</a> - {{ .PublishDate.Format "January 2, 2006" }}</p>
-        {{ end }}
-      </div>
+      {{ end }}
     </section>
     <section>
       <h2>Other Releases</h2>

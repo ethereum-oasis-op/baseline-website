@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ partial "baseline_banner.html" . }}
+  <article class="hero-content">
+
+    <header class="">
+        <div class="left-side">
+            <a href="{{ .Site.BaseURL }}releases"><img src="/images/icons/arrow-left.svg"></a>
+            <a href="{{ .Site.BaseURL }}releases" class="home">BACK TO RELEASES</a>
+        </div>
+      <h1 class="">
+        {{- .Title -}}
+      </h1>
+      {{ if .Params.image }}
+      <img src="{{ .Params.image }}">
+      {{ end }}
+      <p> {{ .PublishDate.Format "January 2, 2006" }}</p>
+    </header>
+
+    <section class="">
+      {{- .Content -}}
+    </section>
+    <section>
+      <h2>Other Releases</h2>
+      {{ partial "releases.html" . }}
+      
+    </section>
+
+    <aside class="w-30-l mt6-l">
+      {{- partial "menu-contextual.html" . -}}
+    </aside>
+
+  </article>
+{{ end }}

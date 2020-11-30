@@ -160,7 +160,6 @@ padding-left: 4px;
 .baseline img {
     max-width: 80%;
     padding: 40px;
-    padding-top: 100px;
 }
 
 .lead {
@@ -247,6 +246,12 @@ padding-left: 4px;
 
 }
 
+.social-icons {
+    vertical-align: middle;
+    width: 24%;
+    padding-top: 10px;
+}
+
 .releases-wrapper {
   display: flex;
 }
@@ -266,7 +271,7 @@ padding-left: 4px;
 }
 
 .newest-card {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 img.youtube {
@@ -389,6 +394,17 @@ ul.membership {
   padding: 16px;
   text-align: left:
 }
+.release-cards {
+  background: #FFFFFF;
+  border: 1px solid #CEC5BF;
+  box-sizing: border-box;
+  box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+  margin: 40px 20px 40px 0px;
+  padding: 16px;
+  text-align: left;
+  width: 31%;
+  margin: 20px 20px 20px 0px;
+}
 .horizontal-banner {
   display: flex;
 }
@@ -506,6 +522,13 @@ hr {
   }
 
   .release-cards {
+    background: #FFFFFF;
+    border: 1px solid #CEC5BF;
+    box-sizing: border-box;
+    box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+    margin: 40px 20px 40px 0px;
+    padding: 16px;
+    text-align: left;
     width: 31%;
     margin: 20px 20px 20px 0px;
   }
@@ -690,9 +713,14 @@ hr {
 
   .release-cards {
     width: 45%;
-    border: none;
-    box-sizing: none;
-    box-shadow: none;
+    background: #FFFFFF;
+    border: 1px solid #CEC5BF;
+    box-sizing: border-box;
+    box-shadow: 2px 14px 14px rgba(0, 0, 0, 0.1);
+    margin: 40px 20px 40px 0px;
+    padding: 16px;
+    text-align: left;
+    margin: 20px 20px 20px 0px;
   }
 
   .social-cards {

@@ -19,7 +19,7 @@
                     <a href="https://baseline-protocol.org/{{ .Params.slug }}"><img src="{{ .Params.image }}"></a>
                     <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
                     <h2><a href="https://baseline-protocol.org/{{ .Params.slug }}">{{ .Params.title }}</a></h2>
-                    {{ .Params.blurb }}
+                    {{ .Params.blurb | markdownify }}
                     <p><a href="https://baseline-protocol.org/{{ .Params.slug }}">Read More</a></p>
                     <div><hr></div>
                 {{ end }}

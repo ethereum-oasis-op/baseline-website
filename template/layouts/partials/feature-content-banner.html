@@ -3,7 +3,10 @@
       <h2 class="dib">View the Latest</h2>
       <p class="dib ml4-ns"><a href="{{ .Site.BaseURL }}releases">View All</a></p>
     </div>
-    {{ range first 3 (where .Site.RegularPages "Section" "releases") }}
+    {{ $releases := where .Site.RegularPages "Section" "releases" }}
+    {{ $news := where .Site.RegularPages "Section" "news"}}
+    {{ $filtered := $releases | union $news }}
+    {{ range first 3 $filtered.ByDate.Reverse }}
       <div class="horizontal-banner">
         <div class="banner-card">
             <div class="left-side">
@@ -14,7 +17,7 @@
             <div class="banner-content">
               <h3>{{ .Params.headline }}</h3>
               <p>{{ .Params.description }}</p>
-              <p><a href="{{ .Site.BaseURL }}releases/{{.Params.slug}}/">See it in action</a></p>
+              <p><a href="https://baseline-protocol.org/{{.Params.slug}}/">See it in action</a></p>
             </div>
           </div>
         </div>

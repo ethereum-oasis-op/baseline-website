@@ -1,5 +1,5 @@
 ---
-date: 2020-03-03
+date: 2020-12-09
 slug: "Hackathon2020"
 description: "Announcing the Baseline Protocol Gitcoin Hackathon"
 title: "Ten Thousand Dollars in Prizes to Be Won from December 9th, 2020 to January 6th, 2021"

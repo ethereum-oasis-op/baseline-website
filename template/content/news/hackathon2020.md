@@ -1,6 +1,6 @@
 ---
 date: 2020-12-09
-slug: "news/hackathon2020"
+slug: "hackathon2020"
 headline: "Announcing the first-ever Gitcoin Hackathon for Baseline"
 description: "Ten Thousand Dollars in Prizes to Be Won from December 9th, 2020 to January 6th, 2021"
 title: "Ten Thousand Dollars in Prizes to Be Won from December 9th, 2020 to January 6th, 2021"

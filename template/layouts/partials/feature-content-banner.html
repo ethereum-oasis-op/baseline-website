@@ -17,7 +17,11 @@
             <div class="banner-content">
               <h3>{{ .Params.headline }}</h3>
               <p>{{ .Params.description }}</p>
-              <p><a href="https://baseline-protocol.org/{{.Params.slug}}/">See it in action</a></p>
+              {{ if eq .Type "releases" }}
+              <p><a href="{{.Site.BaseURL}}releases/{{.Params.slug}}/">See it in action</a></p>
+              {{ else if eq .Type "news" }}
+              <p><a href="{{.Site.BaseURL}}news/{{.Params.slug}}/">See it in action</a></p>
+              {{end}}
             </div>
           </div>
         </div>

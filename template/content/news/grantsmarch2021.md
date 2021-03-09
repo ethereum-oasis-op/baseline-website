@@ -18,8 +18,7 @@ If you are interested in participating in the grants program, please visit [our 
 If you are interested in contributing monetarily to the Baseline Protocol grant pool, visit [our Open Collective Portal](https://opencollective.com/baseline-protocol).
 
 ## Grant wishlist
-
-Here These are some examples of things the protocol can would like to fund. The This purpose of this wishlist is not to serve as an exhaustive list of everything that would be good for the communityprotocol, but as a way to encourage ideas for potential applicants. If your idea to improve the protocol doesn’t fit exactly, feel free to surprise us with your proposal!
+Here are some examples of things the protocol can fund. The purpose of this wishlist is not to serve as an exhaustive list of everything that would be good for the community, but as a way to encourage ideas for potential applicants. If your idea to improve the protocol doesn’t fit exactly, feel free to surprise us with your proposal!
 
 - Implementation of a HelloWorld-style demo to explain the baseline protocol.
 - Contribution to a react.js admin dashboard for configuring and monitoring a baseline stack.

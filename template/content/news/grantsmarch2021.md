@@ -30,8 +30,8 @@ Here These are some examples of things the protocol can would like to fund. The 
 
 ## Governing rules
 
-Funds Allocation and Administration
-The parameters of this grant and its administration are as follows:
+### Funds Allocation and Administration
+#### The parameters of this grant and its administration are as follows:
 
 
 
@@ -41,12 +41,10 @@ The other 25% may be allocated for projects that are outside the current scope o
 Any remaining funds not allocated by August 1, 2021 will be returned to the EF.
 
 
-
 The governing bodies of the Baseline Protocol ([Technical Steering Committee, Project Governance Board and Maintainers Team](https://docs.baseline-protocol.org/community/community-leaders)) will be responsible for ensuring that projects are selected in accordance with the criteria and that the funds are properly distributed.
 
 
-
-Submission Criteria will stipulate that:
+### Submission Criteria will stipulate that:
 Projects use the public Ethereum mainnet as the Common Frame of Reference in the baseline protocol stack
 A project must publicly announce itself at the start of work (not at the end)
 Projects that directly support a commercial business opportunity, where the intent in proposing an allocation from the EF fund is to offset client fees, will not be favored by the TSC, but latitude to the TSC shall be given for special cases where a commercial project is adding important value back to the open source and to the standard. The judgement of the TSC in this regard shall be reviewed by the PGB and the EF representatives quarterly to correct errors in judgment and build a decision-making culture that can be trusted to uphold the principle of not using these funds as a kind of “corporate welfare.”
@@ -55,7 +53,7 @@ Project outputs should be rendered in open source submissions, though there may 
 
 
 
-The criteria for sizing the allocation of funds to a project shall include:
+### The criteria for sizing the allocation of funds to a project shall include:
 The project proposal’s requested amount;
 Responses to challenges to the requested amount and whether the work can be catalyzed for a lower award;
 Monthly limits on total allocations in that month, so that learning can accumulate on how to fund the best projects between February and June without running out of funds too early.

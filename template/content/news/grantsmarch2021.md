@@ -7,7 +7,7 @@ title: "Announcing Baseline Grants and $100,000 Ethereum Foundation Gift"
 blurb: "We are excited to announce that the Ethereum Foundation has provided the initial funding of a new grants program."
 ---
 
-The Baseline Protocol is excited to announce the creation of the Baseline Protocol Grants program! This program is designed to encourage and accelerate baseline protocol R&D and enablement efforts.  We are utilizing [Open Collective](http://opencollective.com/opensource) to organize and administer the funding. Our [Baseline Protocol Grants portal on the GitHub](https://github.com/ethereum-oasis/baseline-grants) has information on what type of projects we are looking for.
+The Baseline Protocol is excited to [announce](https://www.oasis-open.org/2021/03/10/ethereum-oasis-receives-100k-incentive-funding-for-baseline-protocol-projects/) the creation of the Baseline Protocol Grants program! This program is designed to encourage and accelerate baseline protocol R&D and enablement efforts.  We are utilizing [Open Collective](http://opencollective.com/opensource) to organize and administer the funding. Our [Baseline Protocol Grants portal on the GitHub](https://github.com/ethereum-oasis/baseline-grants) has information on what type of projects we are looking for.
 
 The Baseline Protocol Grants program is made possible by a generous gift of $100,000 from the [Ethereum Foundation](https://ethereum.foundation/).
 

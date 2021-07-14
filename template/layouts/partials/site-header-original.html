@@ -5,7 +5,7 @@
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
   <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
-    
+
     <div class="{{ .Site.Params }}">
 
       {{ partial "site-navigation.html" .}}

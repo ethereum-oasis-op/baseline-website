@@ -1,6 +1,6 @@
 ---
 date: 2021-09-01
-slug: "Baseledger Testnet Launches"
+slug: "baseledger-testnet-launches"
 headline: "Baseledger, the First Layer 2 Network for Baseline Protocol, Launches Testnet"
 description: "Developers can now synchronize systems across the internet with Baseledger"
 title: "Baseledger first to implement a network for managing baseline proofs, secured by public Ethereum"

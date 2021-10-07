@@ -1,8 +1,8 @@
 ---
 date: 2021-09-01
-slug: "Vote for Your 2021-22 Technical Steering Committee"
-headline: "Choose 11 of the 19 Candidates for the 2021-22 TSC"
-description: "Developers can now synchronize systems across the internet with Baseledger"
+slug: "Vote-2021-22-Technical-Steering-Committee"
+headline: "Don't miss your chance to vote for your 2021-22 Technical Steering Committee"
+description: "Choose 11 of the 19 Candidates for the 2021-22 TSC"
 title: "Vote for Your 2021-22 Technical Steering Committee between October 13 and 26"
 blurb: "Don't miss your chance to vote for your 2021-22 Technical Steering Committee"
 ---

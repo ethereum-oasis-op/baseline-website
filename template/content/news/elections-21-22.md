@@ -1,5 +1,5 @@
 ---
-date: 2021-09-01
+date: 2021-10-07
 slug: "Vote-2021-22-Technical-Steering-Committee"
 headline: "Don't miss your chance to vote for your 2021-22 Technical Steering Committee"
 description: "Choose 11 of the 19 Candidates for the 2021-22 TSC"

@@ -367,7 +367,7 @@ ul.membership {
 }
 
 .hero-content {
-  max-width: 1280px;
+  max-width: 85%;
   padding: 5% 15%;
 }
 
@@ -731,7 +731,7 @@ hr {
   }
 
   .channel-card-wrapper {
-    margin-left: 0px;  
+    margin-left: 0px;
   }
 
   .row.slim {
